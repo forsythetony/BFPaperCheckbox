@@ -43,6 +43,9 @@
 /** A flag to set to YES to have the tap-circle ripple from point of touch. If this is set to NO, the tap-circle will always ripple from the center of the button. Default is YES. */
 @property BOOL rippleFromTapLocation;
 
+/** */
+@property BOOL enabled;
+
 /** The UIColor to use for the circle which appears where you tap to check the box. NOTE: Setting this defeats the "Smart Color" ability of the tap circle. Alpha values less than 1 are recommended. */
 @property UIColor *tapCirclePositiveColor;
 
