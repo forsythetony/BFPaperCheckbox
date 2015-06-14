@@ -140,7 +140,7 @@ static NSString *const mark_eraseLongLine = @"largeCheckmarkLine2";
     _isChecked = NO;
     self.rippleFromTapLocation = YES;
     
-    self.enabled = YES;
+    self.pbEnabled = YES;
     
     self.tapCirclePositiveColor = nil;
     self.tapCircleNegativeColor = nil;
@@ -211,7 +211,7 @@ static NSString *const mark_eraseLongLine = @"largeCheckmarkLine2";
 #pragma mark - IBAction/Callback Handlers
 - (void)paperTouchDown:(BFPaperCheckbox *)sender
 {
-    if (self.enabled) {
+    if (self.pbEnabled) {
         [self growTapCircle];
     }
     
@@ -220,7 +220,7 @@ static NSString *const mark_eraseLongLine = @"largeCheckmarkLine2";
 
 - (void)paperTouchUp:(BFPaperCheckbox *)sender
 {
-    if (self.enabled) {
+    if (self.pbEnabled) {
         [self fadeTapCircleOut];
     }
 
@@ -228,7 +228,7 @@ static NSString *const mark_eraseLongLine = @"largeCheckmarkLine2";
 
 - (void)paperTouchUpAndSwitchStates:(BFPaperCheckbox *)sender
 {
-    if (self.enabled) {
+    if (self.pbEnabled) {
         //NSLog(@"Touch Up handler with switching states");
         if (!self.finishedAnimations) {
             [self fadeTapCircleOut];

@@ -44,7 +44,7 @@
 @property BOOL rippleFromTapLocation;
 
 /** */
-@property BOOL enabled;
+@property BOOL pbEnabled;
 
 /** The UIColor to use for the circle which appears where you tap to check the box. NOTE: Setting this defeats the "Smart Color" ability of the tap circle. Alpha values less than 1 are recommended. */
 @property UIColor *tapCirclePositiveColor;
